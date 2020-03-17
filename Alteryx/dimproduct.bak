@@ -1,0 +1,1215 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="102" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:SQLServer_AW|||select Production.Product.ProductID,
+	Production.Product.Name,
+	Production.Product.ProductNumber,
+	Production.Product.MakeFlag,
+	Production.Product.FinishedGoodsFlag,
+	Production.Product.Color,
+	Production.Product.SafetyStockLevel,
+	Production.Product.ReorderPoint,
+	Production.Product.StandardCost,
+	Production.Product.Size,
+	Production.Product.SizeUnitMeasureCode,
+	Production.Product.ListPrice,
+	Production.Product.WeightUnitMeasureCode,
+	Production.Product.Weight,
+	Production.Product.DaysToManufacture,
+	Production.Product.Class,
+	Production.Product.ProductLine,
+	Production.Product.Style,
+	Production.Product.ProductSubcategoryID,
+	Production.Product.ProductModelID,
+	Production.Product.SellStartDate,
+	Production.Product.SellEndDate,
+	Production.Product.DiscontinuedDate 
+from Production.Product</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:SQLServer_AW
+Query=select Production.Product.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" />
+            <Field name="ProductNumber" size="25" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" />
+            <Field name="MakeFlag" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Bool" />
+            <Field name="FinishedGoodsFlag" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Bool" />
+            <Field name="Color" size="15" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" />
+            <Field name="SafetyStockLevel" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int16" />
+            <Field name="ReorderPoint" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int16" />
+            <Field name="StandardCost" scale="4" size="21" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" />
+            <Field name="Size" size="5" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" />
+            <Field name="SizeUnitMeasureCode" size="3" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" />
+            <Field name="ListPrice" scale="4" size="21" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" />
+            <Field name="WeightUnitMeasureCode" size="3" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" />
+            <Field name="Weight" scale="2" size="10" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" />
+            <Field name="DaysToManufacture" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" />
+            <Field name="Class" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" />
+            <Field name="ProductLine" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" />
+            <Field name="Style" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" />
+            <Field name="ProductSubcategoryID" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" />
+            <Field name="ProductModelID" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" />
+            <Field name="SellStartDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" />
+            <Field name="SellEndDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" />
+            <Field name="DiscontinuedDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA;	Production.Product.Name,&#xA;	Production.Product.ProductNumber,&#xA;	Production.Product.MakeFlag,&#xA;	Production.Product.FinishedGoodsFlag,&#xA;	Production.Product.Color,&#xA;	Production.Product.SafetyStockLevel,&#xA;	Production.Product.ReorderPoint,&#xA;	Production.Product.StandardCost,&#xA;	Production.Product.Size,&#xA;	Production.Product.SizeUnitMeasureCode,&#xA;	Production.Product.ListPrice,&#xA;	Production.Product.WeightUnitMeasureCode,&#xA;	Production.Product.Weight,&#xA;	Production.Product.DaysToManufacture,&#xA;	Production.Product.Class,&#xA;	Production.Product.ProductLine,&#xA;	Production.Product.Style,&#xA;	Production.Product.ProductSubcategoryID,&#xA;	Production.Product.ProductModelID,&#xA;	Production.Product.SellStartDate,&#xA;	Production.Product.SellEndDate,&#xA;	Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,
+	aw2017neu__purchasing.purchaseorderdetail.UnitPrice,
+	aw2017neu__purchasing.purchaseorderdetail.ModifiedDate 
+from aw2017neu__purchasing.purchaseorderdetail</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select aw2017neu__purchasing...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,&#xA;	aw2017neu__purchasing.purchaseorderdetail.UnitPrice,&#xA;	aw2017neu__purchasing.purchaseorderdetail.ModifiedDate &#xA;from aw2017neu__purchasing.purchaseorderdetail" type="Int32" />
+            <Field name="UnitPrice" scale="2" size="17" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,&#xA;	aw2017neu__purchasing.purchaseorderdetail.UnitPrice,&#xA;	aw2017neu__purchasing.purchaseorderdetail.ModifiedDate &#xA;from aw2017neu__purchasing.purchaseorderdetail" type="FixedDecimal" />
+            <Field name="ModifiedDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,&#xA;	aw2017neu__purchasing.purchaseorderdetail.UnitPrice,&#xA;	aw2017neu__purchasing.purchaseorderdetail.ModifiedDate &#xA;from aw2017neu__purchasing.purchaseorderdetail" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="354" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductID" selected="True" input="Left_" />
+                <SelectField field="Left_Name" selected="True" rename="ProductName" input="Left_" />
+                <SelectField field="Left_ProductNumber" selected="True" input="Left_" />
+                <SelectField field="Left_MakeFlag" selected="True" input="Left_" />
+                <SelectField field="Left_FinishedGoodsFlag" selected="True" input="Left_" />
+                <SelectField field="Left_Color" selected="True" input="Left_" />
+                <SelectField field="Left_SafetyStockLevel" selected="True" input="Left_" />
+                <SelectField field="Left_ReorderPoint" selected="True" input="Left_" />
+                <SelectField field="Left_StandardCost" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_SizeUnitMeasureCode" selected="True" input="Left_" />
+                <SelectField field="Left_ListPrice" selected="True" input="Left_" />
+                <SelectField field="Left_WeightUnitMeasureCode" selected="True" input="Left_" />
+                <SelectField field="Left_Weight" selected="True" input="Left_" />
+                <SelectField field="Left_DaysToManufacture" selected="True" input="Left_" />
+                <SelectField field="Left_Class" selected="True" input="Left_" />
+                <SelectField field="Left_ProductLine" selected="True" input="Left_" />
+                <SelectField field="Left_Style" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSubcategoryID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductModelID" selected="True" input="Left_" />
+                <SelectField field="Left_SellStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_SellEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_DiscontinuedDate" selected="True" input="Left_" />
+                <SelectField field="Right_ProductID" selected="False" rename="Right_ProductID" input="Right_" />
+                <SelectField field="Right_UnitPrice" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="546" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductModelID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductModelID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductName" selected="True" input="Left_" />
+                <SelectField field="Left_ProductNumber" selected="True" input="Left_" />
+                <SelectField field="Left_MakeFlag" selected="True" input="Left_" />
+                <SelectField field="Left_FinishedGoodsFlag" selected="True" input="Left_" />
+                <SelectField field="Left_Color" selected="True" input="Left_" />
+                <SelectField field="Left_SafetyStockLevel" selected="True" input="Left_" />
+                <SelectField field="Left_ReorderPoint" selected="True" input="Left_" />
+                <SelectField field="Left_StandardCost" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_SizeUnitMeasureCode" selected="True" input="Left_" />
+                <SelectField field="Left_ListPrice" selected="True" input="Left_" />
+                <SelectField field="Left_WeightUnitMeasureCode" selected="True" input="Left_" />
+                <SelectField field="Left_Weight" selected="True" input="Left_" />
+                <SelectField field="Left_DaysToManufacture" selected="True" input="Left_" />
+                <SelectField field="Left_Class" selected="True" input="Left_" />
+                <SelectField field="Left_ProductLine" selected="True" input="Left_" />
+                <SelectField field="Left_Style" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSubcategoryID" selected="True" input="Left_" />
+                <SelectField field="Left_SellStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_SellEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_DiscontinuedDate" selected="True" input="Left_" />
+                <SelectField field="Left_UnitPrice" selected="True" input="Left_" />
+                <SelectField field="Right_ProductModelID" selected="False" rename="Right_ProductModelID" input="Right_" />
+                <SelectField field="Right_Name" selected="True" rename="ProductModel" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="354" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:SQLServer_AW|||select Production.ProductModel.ProductModelID,
+	Production.ProductModel.Name 
+from Production.ProductModel</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:SQLServer_AW
+Query=select Production.ProductMod...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductModelID" source="File: aka:SQLServer_AW|||select Production.ProductModel.ProductModelID,&#xA;	Production.ProductModel.Name &#xA;from Production.ProductModel" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:SQLServer_AW|||select Production.ProductModel.ProductModelID,&#xA;	Production.ProductModel.Name &#xA;from Production.ProductModel" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="642" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="738" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductSubcategoryID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductSubcategoryID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductName" selected="True" input="Left_" />
+                <SelectField field="Left_ProductNumber" selected="True" input="Left_" />
+                <SelectField field="Left_MakeFlag" selected="True" input="Left_" />
+                <SelectField field="Left_FinishedGoodsFlag" selected="True" input="Left_" />
+                <SelectField field="Left_Color" selected="True" input="Left_" />
+                <SelectField field="Left_SafetyStockLevel" selected="True" input="Left_" />
+                <SelectField field="Left_ReorderPoint" selected="True" input="Left_" />
+                <SelectField field="Left_StandardCost" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_SizeUnitMeasureCode" selected="True" input="Left_" />
+                <SelectField field="Left_ListPrice" selected="True" input="Left_" />
+                <SelectField field="Left_WeightUnitMeasureCode" selected="True" input="Left_" />
+                <SelectField field="Left_Weight" selected="True" input="Left_" />
+                <SelectField field="Left_DaysToManufacture" selected="True" input="Left_" />
+                <SelectField field="Left_Class" selected="True" input="Left_" />
+                <SelectField field="Left_ProductLine" selected="True" input="Left_" />
+                <SelectField field="Left_Style" selected="True" input="Left_" />
+                <SelectField field="Left_SellStartDate" selected="True" input="Left_" />
+                <SelectField field="Left_SellEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_DiscontinuedDate" selected="True" input="Left_" />
+                <SelectField field="Left_UnitPrice" selected="True" input="Left_" />
+                <SelectField field="Left_ProductModel" selected="True" input="Left_" />
+                <SelectField field="Right_ProductCategory" selected="True" input="Right_" />
+                <SelectField field="Right_ProductSubcategoryID" selected="False" rename="Right_ProductSubcategoryID" input="Right_" />
+                <SelectField field="Right_ProductSubcategory" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:SQLServer_AW|||select Production.ProductCategory.ProductCategoryID,
+	Production.ProductCategory.Name 
+from Production.ProductCategory</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:SQLServer_AW
+Query=select Production.ProductCat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductCategoryID" source="File: aka:SQLServer_AW|||select Production.ProductCategory.ProductCategoryID,&#xA;	Production.ProductCategory.Name &#xA;from Production.ProductCategory" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:SQLServer_AW|||select Production.ProductCategory.ProductCategoryID,&#xA;	Production.ProductCategory.Name &#xA;from Production.ProductCategory" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="126" y="498" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">aka:SQLServer_AW|||select Production.ProductSubcategory.ProductSubcategoryID,
+	Production.ProductSubcategory.ProductCategoryID,
+	Production.ProductSubcategory.Name 
+from Production.ProductSubcategory</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:SQLServer_AW
+Query=select Production.ProductSub...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductSubcategoryID" source="File: aka:SQLServer_AW|||select Production.ProductSubcategory.ProductSubcategoryID,&#xA;	Production.ProductSubcategory.ProductCategoryID,&#xA;	Production.ProductSubcategory.Name &#xA;from Production.ProductSubcategory" type="Int32" />
+            <Field name="ProductCategoryID" source="File: aka:SQLServer_AW|||select Production.ProductSubcategory.ProductSubcategoryID,&#xA;	Production.ProductSubcategory.ProductCategoryID,&#xA;	Production.ProductSubcategory.Name &#xA;from Production.ProductSubcategory" type="Int32" />
+            <Field name="Name" size="50" source="File: aka:SQLServer_AW|||select Production.ProductSubcategory.ProductSubcategoryID,&#xA;	Production.ProductSubcategory.ProductCategoryID,&#xA;	Production.ProductSubcategory.Name &#xA;from Production.ProductSubcategory" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="270" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductCategoryID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductCategoryID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Name" selected="True" rename="ProductCategory" input="Left_" />
+                <SelectField field="Right_ProductSubcategoryID" selected="True" input="Right_" />
+                <SelectField field="Right_ProductCategoryID" selected="False" rename="Right_ProductCategoryID" input="Right_" />
+                <SelectField field="Right_Name" selected="True" rename="ProductSubcategory" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="834" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="ProductID" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" column="1" />
+                <Field name="ProductName" size="50" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="2" />
+                <Field name="ProductNumber" size="25" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="3" />
+                <Field name="MakeFlag" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Bool" column="4" />
+                <Field name="FinishedGoodsFlag" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Bool" column="5" />
+                <Field name="Color" size="15" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="6" />
+                <Field name="SafetyStockLevel" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int16" column="7" />
+                <Field name="ReorderPoint" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int16" column="8" />
+                <Field name="StandardCost" scale="4" size="21" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="9" />
+                <Field name="Size" size="5" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="10" />
+                <Field name="SizeUnitMeasureCode" size="3" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="11" />
+                <Field name="ListPrice" scale="4" size="21" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="12" />
+                <Field name="WeightUnitMeasureCode" size="3" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="13" />
+                <Field name="Weight" scale="2" size="10" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="14" />
+                <Field name="DaysToManufacture" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" column="15" />
+                <Field name="Class" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="16" />
+                <Field name="ProductLine" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="17" />
+                <Field name="Style" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="18" />
+                <Field name="ProductSubcategoryID" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" column="19" />
+                <Field name="SellStartDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" column="20" />
+                <Field name="SellEndDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" column="21" />
+                <Field name="DiscontinuedDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" column="22" />
+                <Field name="UnitPrice" scale="2" size="17" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,&#xA; aw2017neu__purchasing.purchaseorderdetail.UnitPrice,&#xA; aw2017neu__purchasing.purchaseorderdetail.ModifiedDate &#xA;from aw2017neu__purchasing.purchaseorderdetail" type="FixedDecimal" column="23" />
+                <Field name="ProductModel" size="50" source="File: aka:SQLServer_AW|||select Production.ProductModel.ProductModelID,&#xA; Production.ProductModel.Name &#xA;from Production.ProductModel" type="V_WString" column="24" />
+                <Field name="ProductModelID" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" column="25" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="ProductID" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" column="1" />
+                <Field name="ProductName" size="50" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="2" />
+                <Field name="ProductNumber" size="25" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="3" />
+                <Field name="MakeFlag" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Bool" column="4" />
+                <Field name="FinishedGoodsFlag" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Bool" column="5" />
+                <Field name="Color" size="15" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="6" />
+                <Field name="SafetyStockLevel" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int16" column="7" />
+                <Field name="ReorderPoint" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int16" column="8" />
+                <Field name="StandardCost" scale="4" size="21" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="9" />
+                <Field name="Size" size="5" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="10" />
+                <Field name="SizeUnitMeasureCode" size="3" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="11" />
+                <Field name="ListPrice" scale="4" size="21" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="12" />
+                <Field name="WeightUnitMeasureCode" size="3" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="13" />
+                <Field name="Weight" scale="2" size="10" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="14" />
+                <Field name="DaysToManufacture" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" column="15" />
+                <Field name="Class" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="16" />
+                <Field name="ProductLine" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="17" />
+                <Field name="Style" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="18" />
+                <Field name="SellStartDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" column="20" />
+                <Field name="SellEndDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" column="21" />
+                <Field name="DiscontinuedDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" column="22" />
+                <Field name="UnitPrice" scale="2" size="17" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,&#xA; aw2017neu__purchasing.purchaseorderdetail.UnitPrice,&#xA; aw2017neu__purchasing.purchaseorderdetail.ModifiedDate &#xA;from aw2017neu__purchasing.purchaseorderdetail" type="FixedDecimal" column="23" />
+                <Field name="ProductModel" size="50" source="File: aka:SQLServer_AW|||select Production.ProductModel.ProductModelID,&#xA; Production.ProductModel.Name &#xA;from Production.ProductModel" type="V_WString" column="24" />
+                <Field name="ProductCategory" size="50" source="File: aka:SQLServer_AW|||select Production.ProductCategory.ProductCategoryID,&#xA; Production.ProductCategory.Name &#xA;from Production.ProductCategory" type="V_WString" column="26" />
+                <Field name="ProductSubcategory" size="50" source="File: aka:SQLServer_AW|||select Production.ProductSubcategory.ProductSubcategoryID,&#xA; Production.ProductSubcategory.ProductCategoryID,&#xA; Production.ProductSubcategory.Name &#xA;from Production.ProductSubcategory" type="V_WString" column="27" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1026" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ProductID" selected="True" rename="ProductID_SK" />
+            <SelectField field="ProductName" selected="True" />
+            <SelectField field="ProductNumber" selected="True" />
+            <SelectField field="MakeFlag" selected="True" />
+            <SelectField field="FinishedGoodsFlag" selected="True" />
+            <SelectField field="Color" selected="True" />
+            <SelectField field="SafetyStockLevel" selected="True" />
+            <SelectField field="ReorderPoint" selected="True" />
+            <SelectField field="StandardCost" selected="True" />
+            <SelectField field="Size" selected="True" />
+            <SelectField field="SizeUnitMeasureCode" selected="True" />
+            <SelectField field="ListPrice" selected="True" />
+            <SelectField field="WeightUnitMeasureCode" selected="True" />
+            <SelectField field="Weight" selected="True" />
+            <SelectField field="DaysToManufacture" selected="True" />
+            <SelectField field="Class" selected="True" />
+            <SelectField field="ProductLine" selected="True" />
+            <SelectField field="Style" selected="True" />
+            <SelectField field="SellStartDate" selected="True" />
+            <SelectField field="SellEndDate" selected="True" />
+            <SelectField field="DiscontinuedDate" selected="True" />
+            <SelectField field="UnitPrice" selected="True" />
+            <SelectField field="ProductModel" selected="True" />
+            <SelectField field="ProductCategory" selected="True" />
+            <SelectField field="ProductSubcategory" selected="True" />
+            <SelectField field="JobID" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="CreatedDate" selected="True" />
+            <SelectField field="ModifiedDate" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="450" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="ProductID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="930" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.WorkflowFileName]" field="JobID" size="64" type="WString" />
+            <FormulaField expression="'1,4,6'" field="SOR_ID" size="64" type="WString" />
+            <FormulaField expression="DateTimeNow()" field="CreatedDate" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="ModifiedDate" size="19" type="DateTime" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>JobID = [Engine.WorkflowFileName]
+SOR_ID = '1,4,6'
+CreatedDate = DateTimeNow()
+M...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1122" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="SellStartDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="FullDate_AlternateKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_ProductName" selected="True" input="Left_" />
+                <SelectField field="Left_ProductNumber" selected="True" input="Left_" />
+                <SelectField field="Left_MakeFlag" selected="True" input="Left_" />
+                <SelectField field="Left_FinishedGoodsFlag" selected="True" input="Left_" />
+                <SelectField field="Left_Color" selected="True" input="Left_" />
+                <SelectField field="Left_SafetyStockLevel" selected="True" input="Left_" />
+                <SelectField field="Left_ReorderPoint" selected="True" input="Left_" />
+                <SelectField field="Left_StandardCost" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_SizeUnitMeasureCode" selected="True" input="Left_" />
+                <SelectField field="Left_ListPrice" selected="True" input="Left_" />
+                <SelectField field="Left_WeightUnitMeasureCode" selected="True" input="Left_" />
+                <SelectField field="Left_Weight" selected="True" input="Left_" />
+                <SelectField field="Left_DaysToManufacture" selected="True" input="Left_" />
+                <SelectField field="Left_Class" selected="True" input="Left_" />
+                <SelectField field="Left_ProductLine" selected="True" input="Left_" />
+                <SelectField field="Left_Style" selected="True" input="Left_" />
+                <SelectField field="Left_SellStartDate" selected="False" rename="Left_SellStartDate" input="Left_" />
+                <SelectField field="Left_SellEndDate" selected="True" input="Left_" />
+                <SelectField field="Left_DiscontinuedDate" selected="True" input="Left_" />
+                <SelectField field="Right_DateKey_SK" selected="True" rename="SellStartDate" input="Right_" />
+                <SelectField field="Left_ProductModel" selected="True" input="Left_" />
+                <SelectField field="Left_ProductCategory" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSubcategory" selected="True" input="Left_" />
+                <SelectField field="Left_JobID" selected="True" input="Left_" />
+                <SelectField field="Left_SOR_ID" selected="True" input="Left_" />
+                <SelectField field="Left_CreatedDate" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Right_FullDate_AlternateKey" selected="False" input="Right_" />
+                <SelectField field="Left_unitPrice" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="954" y="426" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,
+	purchasingdw.dimdate.FullDate_AlternateKey 
+from purchasingdw.dimdate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select purchasingdw.dimdate....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="DateKey_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" />
+            <Field name="FullDate_AlternateKey" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1230" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="SellEndDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="FullDate_AlternateKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_ProductName" selected="True" input="Left_" />
+                <SelectField field="Left_ProductNumber" selected="True" input="Left_" />
+                <SelectField field="Left_MakeFlag" selected="True" input="Left_" />
+                <SelectField field="Left_FinishedGoodsFlag" selected="True" input="Left_" />
+                <SelectField field="Left_Color" selected="True" input="Left_" />
+                <SelectField field="Left_SafetyStockLevel" selected="True" input="Left_" />
+                <SelectField field="Left_ReorderPoint" selected="True" input="Left_" />
+                <SelectField field="Left_StandardCost" selected="True" input="Left_" />
+                <SelectField field="Left_Size" selected="True" input="Left_" />
+                <SelectField field="Left_SizeUnitMeasureCode" selected="True" input="Left_" />
+                <SelectField field="Left_ListPrice" selected="True" input="Left_" />
+                <SelectField field="Left_WeightUnitMeasureCode" selected="True" input="Left_" />
+                <SelectField field="Left_Weight" selected="True" input="Left_" />
+                <SelectField field="Left_DaysToManufacture" selected="True" input="Left_" />
+                <SelectField field="Left_Class" selected="True" input="Left_" />
+                <SelectField field="Left_ProductLine" selected="True" input="Left_" />
+                <SelectField field="Left_Style" selected="True" input="Left_" />
+                <SelectField field="Left_SellStartDate" selected="True" input="Left_" />
+                <SelectField field="Right_DateKey_SK" selected="True" rename="SellEndDate" input="Right_" />
+                <SelectField field="Left_SellEndDate" selected="False" rename="Left_SellEndDate" input="Left_" />
+                <SelectField field="Left_DiscontinuedDate" selected="True" input="Left_" />
+                <SelectField field="Left_ProductModel" selected="True" input="Left_" />
+                <SelectField field="Left_ProductCategory" selected="True" input="Left_" />
+                <SelectField field="Left_ProductSubcategory" selected="True" input="Left_" />
+                <SelectField field="Left_JobID" selected="True" input="Left_" />
+                <SelectField field="Left_SOR_ID" selected="True" input="Left_" />
+                <SelectField field="Left_CreatedDate" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Right_FullDate_AlternateKey" selected="False" input="Right_" />
+                <SelectField field="Left_unitPrice" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1110" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,
+	purchasingdw.dimdate.FullDate_AlternateKey 
+from purchasingdw.dimdate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select purchasingdw.dimdate....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="DateKey_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" />
+            <Field name="FullDate_AlternateKey" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1362" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="ProductID_SK" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" column="1" />
+                <Field name="ProductName" size="50" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="2" />
+                <Field name="ProductNumber" size="25" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="3" />
+                <Field name="MakeFlag" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Bool" column="4" />
+                <Field name="FinishedGoodsFlag" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Bool" column="5" />
+                <Field name="Color" size="15" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="6" />
+                <Field name="SafetyStockLevel" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int16" column="7" />
+                <Field name="ReorderPoint" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int16" column="8" />
+                <Field name="StandardCost" scale="4" size="21" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="9" />
+                <Field name="Size" size="5" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="10" />
+                <Field name="SizeUnitMeasureCode" size="3" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="11" />
+                <Field name="ListPrice" scale="4" size="21" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="12" />
+                <Field name="WeightUnitMeasureCode" size="3" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="13" />
+                <Field name="Weight" scale="2" size="10" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="14" />
+                <Field name="DaysToManufacture" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" column="15" />
+                <Field name="Class" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="16" />
+                <Field name="ProductLine" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="17" />
+                <Field name="Style" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="18" />
+                <Field name="SellEndDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" column="19" />
+                <Field name="DiscontinuedDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" column="20" />
+                <Field description="PrimaryKey" name="SellStartDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA; purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" column="21" />
+                <Field name="ProductModel" size="50" source="File: aka:SQLServer_AW|||select Production.ProductModel.ProductModelID,&#xA; Production.ProductModel.Name &#xA;from Production.ProductModel" type="V_WString" column="22" />
+                <Field name="ProductCategory" size="50" source="File: aka:SQLServer_AW|||select Production.ProductCategory.ProductCategoryID,&#xA; Production.ProductCategory.Name &#xA;from Production.ProductCategory" type="V_WString" column="23" />
+                <Field name="ProductSubcategory" size="50" source="File: aka:SQLServer_AW|||select Production.ProductSubcategory.ProductSubcategoryID,&#xA; Production.ProductSubcategory.ProductCategoryID,&#xA; Production.ProductSubcategory.Name &#xA;from Production.ProductSubcategory" type="V_WString" column="24" />
+                <Field name="JobID" size="64" source="Formula: [Engine.WorkflowFileName]" type="WString" column="25" />
+                <Field name="SOR_ID" size="64" source="Formula: '1,4,6'" type="WString" column="26" />
+                <Field name="CreatedDate" source="Formula: DateTimeNow()" type="DateTime" column="27" />
+                <Field name="ModifiedDate" source="Formula: DateTimeNow()" type="DateTime" column="28" />
+                <Field name="UnitPrice" scale="2" size="17" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,&#xA; aw2017neu__purchasing.purchaseorderdetail.UnitPrice,&#xA; aw2017neu__purchasing.purchaseorderdetail.ModifiedDate &#xA;from aw2017neu__purchasing.purchaseorderdetail" type="FixedDecimal" column="29" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="ProductID_SK" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" column="1" />
+                <Field name="ProductName" size="50" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="2" />
+                <Field name="ProductNumber" size="25" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="3" />
+                <Field name="MakeFlag" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Bool" column="4" />
+                <Field name="FinishedGoodsFlag" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Bool" column="5" />
+                <Field name="Color" size="15" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="6" />
+                <Field name="SafetyStockLevel" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int16" column="7" />
+                <Field name="ReorderPoint" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int16" column="8" />
+                <Field name="StandardCost" scale="4" size="21" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="9" />
+                <Field name="Size" size="5" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="V_WString" column="10" />
+                <Field name="SizeUnitMeasureCode" size="3" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="11" />
+                <Field name="ListPrice" scale="4" size="21" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="12" />
+                <Field name="WeightUnitMeasureCode" size="3" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="13" />
+                <Field name="Weight" scale="2" size="10" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="FixedDecimal" column="14" />
+                <Field name="DaysToManufacture" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="Int32" column="15" />
+                <Field name="Class" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="16" />
+                <Field name="ProductLine" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="17" />
+                <Field name="Style" size="2" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="WString" column="18" />
+                <Field description="PrimaryKey" name="SellEndDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA; purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" column="19" />
+                <Field name="DiscontinuedDate" source="File: aka:SQLServer_AW|||select Production.Product.ProductID,&#xA; Production.Product.Name,&#xA; Production.Product.ProductNumber,&#xA; Production.Product.MakeFlag,&#xA; Production.Product.FinishedGoodsFlag,&#xA; Production.Product.Color,&#xA; Production.Product.SafetyStockLevel,&#xA; Production.Product.ReorderPoint,&#xA; Production.Product.StandardCost,&#xA; Production.Product.Size,&#xA; Production.Product.SizeUnitMeasureCode,&#xA; Production.Product.ListPrice,&#xA; Production.Product.WeightUnitMeasureCode,&#xA; Production.Product.Weight,&#xA; Production.Product.DaysToManufacture,&#xA; Production.Product.Class,&#xA; Production.Product.ProductLine,&#xA; Production.Product.Style,&#xA; Production.Product.ProductSubcategoryID,&#xA; Production.Product.ProductModelID,&#xA; Production.Product.SellStartDate,&#xA; Production.Product.SellEndDate,&#xA; Production.Product.DiscontinuedDate &#xA;from Production.Product" type="DateTime" column="20" />
+                <Field description="PrimaryKey" name="SellStartDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA; purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" column="21" />
+                <Field name="ProductModel" size="50" source="File: aka:SQLServer_AW|||select Production.ProductModel.ProductModelID,&#xA; Production.ProductModel.Name &#xA;from Production.ProductModel" type="V_WString" column="22" />
+                <Field name="ProductCategory" size="50" source="File: aka:SQLServer_AW|||select Production.ProductCategory.ProductCategoryID,&#xA; Production.ProductCategory.Name &#xA;from Production.ProductCategory" type="V_WString" column="23" />
+                <Field name="ProductSubcategory" size="50" source="File: aka:SQLServer_AW|||select Production.ProductSubcategory.ProductSubcategoryID,&#xA; Production.ProductSubcategory.ProductCategoryID,&#xA; Production.ProductSubcategory.Name &#xA;from Production.ProductSubcategory" type="V_WString" column="24" />
+                <Field name="JobID" size="64" source="Formula: [Engine.WorkflowFileName]" type="WString" column="25" />
+                <Field name="SOR_ID" size="64" source="Formula: '1,4,6'" type="WString" column="26" />
+                <Field name="CreatedDate" source="Formula: DateTimeNow()" type="DateTime" column="27" />
+                <Field name="ModifiedDate" source="Formula: DateTimeNow()" type="DateTime" column="28" />
+                <Field name="UnitPrice" scale="2" size="17" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,&#xA; aw2017neu__purchasing.purchaseorderdetail.UnitPrice,&#xA; aw2017neu__purchasing.purchaseorderdetail.ModifiedDate &#xA;from aw2017neu__purchasing.purchaseorderdetail" type="FixedDecimal" column="29" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1482" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ProductID_SK" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="ProductName" selected="True" />
+            <SelectField field="ProductNumber" selected="True" />
+            <SelectField field="MakeFlag" selected="True" />
+            <SelectField field="FinishedGoodsFlag" selected="True" />
+            <SelectField field="Color" selected="True" />
+            <SelectField field="SafetyStockLevel" selected="True" />
+            <SelectField field="ReorderPoint" selected="True" />
+            <SelectField field="StandardCost" selected="True" />
+            <SelectField field="ListPrice" selected="True" />
+            <SelectField field="WeightUnitMeasureCode" selected="True" />
+            <SelectField field="SizeUnitMeasureCode" selected="True" />
+            <SelectField field="Size" selected="True" />
+            <SelectField field="Weight" selected="True" />
+            <SelectField field="DaysToManufacture" selected="True" />
+            <SelectField field="Class" selected="True" />
+            <SelectField field="ProductLine" selected="True" />
+            <SelectField field="Style" selected="True" />
+            <SelectField field="SellEndDate" selected="True" type="Int64" size="8" />
+            <SelectField field="DiscontinuedDate" selected="True" />
+            <SelectField field="SellStartDate" selected="True" />
+            <SelectField field="ProductModel" selected="True" rename="ModelName" />
+            <SelectField field="ProductCategory" selected="True" rename="CategoryName" />
+            <SelectField field="ProductSubcategory" selected="True" rename="SubCategoryName" />
+            <SelectField field="JobID" selected="True" />
+            <SelectField field="CreatedDate" selected="True" />
+            <SelectField field="ModifiedDate" selected="True" />
+            <SelectField field="unitPrice" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="150" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="ProductID" action="GroupBy" rename="ProductID" />
+            <SummarizeField field="ModifiedDate" action="Max" rename="Max_ModifiedDate" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,
+	aw2017neu__purchasing.purchaseorderdetail.UnitPrice,
+	aw2017neu__purchasing.purchaseorderdetail.ModifiedDate 
+from aw2017neu__purchasing.purchaseorderdetail</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select aw2017neu__purchasing...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,&#xA;	aw2017neu__purchasing.purchaseorderdetail.UnitPrice,&#xA;	aw2017neu__purchasing.purchaseorderdetail.ModifiedDate &#xA;from aw2017neu__purchasing.purchaseorderdetail" type="Int32" />
+            <Field name="UnitPrice" scale="2" size="17" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,&#xA;	aw2017neu__purchasing.purchaseorderdetail.UnitPrice,&#xA;	aw2017neu__purchasing.purchaseorderdetail.ModifiedDate &#xA;from aw2017neu__purchasing.purchaseorderdetail" type="FixedDecimal" />
+            <Field name="ModifiedDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderdetail.ProductID,&#xA;	aw2017neu__purchasing.purchaseorderdetail.UnitPrice,&#xA;	aw2017neu__purchasing.purchaseorderdetail.ModifiedDate &#xA;from aw2017neu__purchasing.purchaseorderdetail" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="222" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductID" />
+            <Field field="Max_ModifiedDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductID" />
+            <Field field="ModifiedDate" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ProductID" selected="True" input="Left_" />
+                <SelectField field="Right_ProductID" selected="False" rename="Right_ProductID" input="Right_" />
+                <SelectField field="Right_UnitPrice" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1590" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||purchasingdw.dimproduct</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=purchasingdw.dimproduct</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Join" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="4" Connection="Left" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Unique" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="7" Connection="Left" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="16" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="16" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Join" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="18" Connection="Left" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="27" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Right" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>dimproduct</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

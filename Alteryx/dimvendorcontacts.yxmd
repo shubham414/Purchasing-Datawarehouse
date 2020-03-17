@@ -1,0 +1,987 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,
+	BUSINESSENTITYCONTACT.PERSONID,
+	BUSINESSENTITYCONTACT.CONTACTTYPEID 
+from BUSINESSENTITYCONTACT</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select BUSINESSENTITYCONTACT...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA;	BUSINESSENTITYCONTACT.PERSONID,&#xA;	BUSINESSENTITYCONTACT.CONTACTTYPEID &#xA;from BUSINESSENTITYCONTACT" type="Int64" />
+            <Field description="PrimaryKey" name="PERSONID" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA;	BUSINESSENTITYCONTACT.PERSONID,&#xA;	BUSINESSENTITYCONTACT.CONTACTTYPEID &#xA;from BUSINESSENTITYCONTACT" type="Int64" />
+            <Field description="PrimaryKey" name="CONTACTTYPEID" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA;	BUSINESSENTITYCONTACT.PERSONID,&#xA;	BUSINESSENTITYCONTACT.CONTACTTYPEID &#xA;from BUSINESSENTITYCONTACT" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.vendor.BusinessEntityID,
+	aw2017neu__purchasing.vendor.VendorName,
+	aw2017neu__purchasing.vendor.AccountNumber 
+from aw2017neu__purchasing.vendor</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select aw2017neu__purchasing...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BusinessEntityID" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.vendor.BusinessEntityID,&#xA;	aw2017neu__purchasing.vendor.VendorName,&#xA;	aw2017neu__purchasing.vendor.AccountNumber &#xA;from aw2017neu__purchasing.vendor" type="Int32" />
+            <Field name="VendorName" size="50" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.vendor.BusinessEntityID,&#xA;	aw2017neu__purchasing.vendor.VendorName,&#xA;	aw2017neu__purchasing.vendor.AccountNumber &#xA;from aw2017neu__purchasing.vendor" type="V_String" />
+            <Field name="AccountNumber" size="15" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.vendor.BusinessEntityID,&#xA;	aw2017neu__purchasing.vendor.VendorName,&#xA;	aw2017neu__purchasing.vendor.AccountNumber &#xA;from aw2017neu__purchasing.vendor" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="210" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BusinessEntityID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_BusinessEntityID" selected="False" rename="v.bentityid" input="Left_" />
+                <SelectField field="Left_VendorName" selected="True" input="Left_" />
+                <SelectField field="Left_AccountNumber" selected="True" input="Left_" />
+                <SelectField field="Right_BUSINESSENTITYID" selected="True" rename="bec.bentityid" input="Right_" />
+                <SelectField field="Right_PERSONID" selected="True" input="Right_" />
+                <SelectField field="Right_CONTACTTYPEID" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="210" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select CONTACTTYPE.CONTACTTYPEID,
+	CONTACTTYPE.CONTACTTYPENAME 
+from CONTACTTYPE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select CONTACTTYPE.CONTACTTY...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="CONTACTTYPEID" source="File: aka:Oracle_AW_Person|||select CONTACTTYPE.CONTACTTYPEID,&#xA;	CONTACTTYPE.CONTACTTYPENAME &#xA;from CONTACTTYPE" type="Int64" />
+            <Field name="CONTACTTYPENAME" size="50" source="File: aka:Oracle_AW_Person|||select CONTACTTYPE.CONTACTTYPEID,&#xA;	CONTACTTYPE.CONTACTTYPENAME &#xA;from CONTACTTYPE" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="342" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CONTACTTYPEID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="CONTACTTYPEID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_CONTACTTYPEID" selected="False" rename="ct.contacttypeid" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="342" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,
+	PERSON.TITLE,
+	PERSON.FIRSTNAME,
+	PERSON.MIDDLENAME,
+	PERSON.LASTNAME,
+	PERSON.SUFFIX,
+	PERSON.EMAILPROMOTION 
+from PERSON</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select PERSON.BUSINESSENTITY...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" />
+            <Field name="TITLE" size="8" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" />
+            <Field name="FIRSTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" />
+            <Field name="MIDDLENAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" />
+            <Field name="LASTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" />
+            <Field name="SUFFIX" size="10" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" />
+            <Field name="EMAILPROMOTION" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="438" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PERSONID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VendorName" selected="True" input="Left_" />
+                <SelectField field="Left_AccountNumber" selected="True" input="Left_" />
+                <SelectField field="Left_bec.bentityid" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPEID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPENAME" selected="True" input="Left_" />
+                <SelectField field="Right_BUSINESSENTITYID" selected="True" rename="p.bentityid" input="Right_" />
+                <SelectField field="Right_TITLE" selected="True" input="Right_" />
+                <SelectField field="Right_FIRSTNAME" selected="True" input="Right_" />
+                <SelectField field="Right_MIDDLENAME" selected="True" input="Right_" />
+                <SelectField field="Right_LASTNAME" selected="True" input="Right_" />
+                <SelectField field="Right_SUFFIX" selected="True" input="Right_" />
+                <SelectField field="Right_EMAILPROMOTION" selected="True" input="Right_" />
+                <SelectField field="Left_Right_BUSINESSENTITYID" selected="False" rename="Left_Right_BUSINESSENTITYID" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="486" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select EMAILADDRESS.BUSINESSENTITYID,
+	EMAILADDRESS.EMAILADDRESS 
+from EMAILADDRESS</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select EMAILADDRESS.BUSINESS...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_AW_Person|||select EMAILADDRESS.BUSINESSENTITYID,&#xA;	EMAILADDRESS.EMAILADDRESS &#xA;from EMAILADDRESS" type="Int64" />
+            <Field name="EMAILADDRESS" size="50" source="File: aka:Oracle_AW_Person|||select EMAILADDRESS.BUSINESSENTITYID,&#xA;	EMAILADDRESS.EMAILADDRESS &#xA;from EMAILADDRESS" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="594" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="p.bentityid" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VendorName" selected="True" input="Left_" />
+                <SelectField field="Left_AccountNumber" selected="True" input="Left_" />
+                <SelectField field="Left_bec.bentityid" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPEID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPENAME" selected="True" input="Left_" />
+                <SelectField field="Left_p.bentityid" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_SUFFIX" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Right_BUSINESSENTITYID" selected="True" rename="ea.bentityid" input="Right_" />
+                <SelectField field="Right_EMAILADDRESS" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="702" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="VendorName" size="50" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.vendor.BusinessEntityID,&#xA; aw2017neu__purchasing.vendor.VendorName,&#xA; aw2017neu__purchasing.vendor.AccountNumber &#xA;from aw2017neu__purchasing.vendor" type="V_String" column="1" />
+                <Field name="AccountNumber" size="15" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.vendor.BusinessEntityID,&#xA; aw2017neu__purchasing.vendor.VendorName,&#xA; aw2017neu__purchasing.vendor.AccountNumber &#xA;from aw2017neu__purchasing.vendor" type="V_String" column="2" />
+                <Field name="bec.bentityid" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA; BUSINESSENTITYCONTACT.PERSONID,&#xA; BUSINESSENTITYCONTACT.CONTACTTYPEID &#xA;from BUSINESSENTITYCONTACT" type="Int64" column="3" />
+                <Field name="PERSONID" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA; BUSINESSENTITYCONTACT.PERSONID,&#xA; BUSINESSENTITYCONTACT.CONTACTTYPEID &#xA;from BUSINESSENTITYCONTACT" type="Int64" column="4" />
+                <Field name="CONTACTTYPEID" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA; BUSINESSENTITYCONTACT.PERSONID,&#xA; BUSINESSENTITYCONTACT.CONTACTTYPEID &#xA;from BUSINESSENTITYCONTACT" type="Int64" column="5" />
+                <Field name="CONTACTTYPENAME" size="50" source="File: aka:Oracle_AW_Person|||select CONTACTTYPE.CONTACTTYPEID,&#xA; CONTACTTYPE.CONTACTTYPENAME &#xA;from CONTACTTYPE" type="V_WString" column="6" />
+                <Field name="p.bentityid" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" column="7" />
+                <Field name="TITLE" size="8" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="8" />
+                <Field name="FIRSTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="9" />
+                <Field name="MIDDLENAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="10" />
+                <Field name="LASTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="11" />
+                <Field name="SUFFIX" size="10" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="12" />
+                <Field name="EMAILPROMOTION" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" column="13" />
+                <Field name="ea.bentityid" source="File: aka:Oracle_AW_Person|||select EMAILADDRESS.BUSINESSENTITYID,&#xA; EMAILADDRESS.EMAILADDRESS &#xA;from EMAILADDRESS" type="Int64" column="14" />
+                <Field name="EMAILADDRESS" size="50" source="File: aka:Oracle_AW_Person|||select EMAILADDRESS.BUSINESSENTITYID,&#xA; EMAILADDRESS.EMAILADDRESS &#xA;from EMAILADDRESS" type="V_WString" column="15" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="VendorName" size="50" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.vendor.BusinessEntityID,&#xA; aw2017neu__purchasing.vendor.VendorName,&#xA; aw2017neu__purchasing.vendor.AccountNumber &#xA;from aw2017neu__purchasing.vendor" type="V_String" column="1" />
+                <Field name="AccountNumber" size="15" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.vendor.BusinessEntityID,&#xA; aw2017neu__purchasing.vendor.VendorName,&#xA; aw2017neu__purchasing.vendor.AccountNumber &#xA;from aw2017neu__purchasing.vendor" type="V_String" column="2" />
+                <Field name="bec.bentityid" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA; BUSINESSENTITYCONTACT.PERSONID,&#xA; BUSINESSENTITYCONTACT.CONTACTTYPEID &#xA;from BUSINESSENTITYCONTACT" type="Int64" column="3" />
+                <Field name="PERSONID" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA; BUSINESSENTITYCONTACT.PERSONID,&#xA; BUSINESSENTITYCONTACT.CONTACTTYPEID &#xA;from BUSINESSENTITYCONTACT" type="Int64" column="4" />
+                <Field name="CONTACTTYPEID" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYCONTACT.BUSINESSENTITYID,&#xA; BUSINESSENTITYCONTACT.PERSONID,&#xA; BUSINESSENTITYCONTACT.CONTACTTYPEID &#xA;from BUSINESSENTITYCONTACT" type="Int64" column="5" />
+                <Field name="CONTACTTYPENAME" size="50" source="File: aka:Oracle_AW_Person|||select CONTACTTYPE.CONTACTTYPEID,&#xA; CONTACTTYPE.CONTACTTYPENAME &#xA;from CONTACTTYPE" type="V_WString" column="6" />
+                <Field name="p.bentityid" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" column="7" />
+                <Field name="TITLE" size="8" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="8" />
+                <Field name="FIRSTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="9" />
+                <Field name="MIDDLENAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="10" />
+                <Field name="LASTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="11" />
+                <Field name="SUFFIX" size="10" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="12" />
+                <Field name="EMAILPROMOTION" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" column="13" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="654" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select PERSONPHONE.BUSINESSENTITYID,
+	PERSONPHONE.PHONENUMBER,
+	PERSONPHONE.PHONENUMBERTYPEID 
+from PERSONPHONE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select PERSONPHONE.BUSINESSE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_AW_Person|||select PERSONPHONE.BUSINESSENTITYID,&#xA;	PERSONPHONE.PHONENUMBER,&#xA;	PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="Int64" />
+            <Field description="PrimaryKey" name="PHONENUMBER" size="25" source="File: aka:Oracle_AW_Person|||select PERSONPHONE.BUSINESSENTITYID,&#xA;	PERSONPHONE.PHONENUMBER,&#xA;	PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="WString" />
+            <Field description="PrimaryKey" name="PHONENUMBERTYPEID" source="File: aka:Oracle_AW_Person|||select PERSONPHONE.BUSINESSENTITYID,&#xA;	PERSONPHONE.PHONENUMBER,&#xA;	PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="894" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="p.bentityid" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_BUSINESSENTITYID" selected="True" rename="pp.bentityid" input="Right_" />
+                <SelectField field="Left_Right_BUSINESSENTITYID" selected="False" rename="Left_Right_BUSINESSENTITYID" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="798" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="p.bentityid" />
+            <Field field="ea.bentityid" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1014" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="810" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select PHONENUMBERTYPE.PHONENUMBERTYPEID,
+	PHONENUMBERTYPE.PHONENUMBERTYPENAME 
+from PHONENUMBERTYPE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select PHONENUMBERTYPE.PHONE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="PHONENUMBERTYPEID" source="File: aka:Oracle_AW_Person|||select PHONENUMBERTYPE.PHONENUMBERTYPEID,&#xA;	PHONENUMBERTYPE.PHONENUMBERTYPENAME &#xA;from PHONENUMBERTYPE" type="Int64" />
+            <Field name="PHONENUMBERTYPENAME" size="50" source="File: aka:Oracle_AW_Person|||select PHONENUMBERTYPE.PHONENUMBERTYPEID,&#xA;	PHONENUMBERTYPE.PHONENUMBERTYPENAME &#xA;from PHONENUMBERTYPE" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="1086" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="VendorName" />
+            <Field field="AccountNumber" />
+            <Field field="bec.bentityid" />
+            <Field field="PERSONID" />
+            <Field field="CONTACTTYPEID" />
+            <Field field="CONTACTTYPENAME" />
+            <Field field="p.bentityid" />
+            <Field field="TITLE" />
+            <Field field="FIRSTNAME" />
+            <Field field="MIDDLENAME" />
+            <Field field="LASTNAME" />
+            <Field field="SUFFIX" />
+            <Field field="EMAILPROMOTION" />
+            <Field field="ea.bentityid" />
+            <Field field="EMAILADDRESS" />
+            <Field field="pp.bentityid" />
+            <Field field="PHONENUMBER" />
+            <Field field="PHONENUMBERTYPEID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1086" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PHONENUMBERTYPEID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PHONENUMBERTYPEID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VendorName" selected="True" input="Left_" />
+                <SelectField field="Left_AccountNumber" selected="True" input="Left_" />
+                <SelectField field="Left_bec.bentityid" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPEID" selected="True" input="Left_" />
+                <SelectField field="Left_CONTACTTYPENAME" selected="True" input="Left_" />
+                <SelectField field="Left_p.bentityid" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_SUFFIX" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Left_ea.bentityid" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILADDRESS" selected="True" input="Left_" />
+                <SelectField field="Left_pp.bentityid" selected="True" input="Left_" />
+                <SelectField field="Left_PHONENUMBER" selected="True" input="Left_" />
+                <SelectField field="Right_PHONENUMBERTYPEID" selected="False" rename="Right_PHONENUMBERTYPEID" input="Right_" />
+                <SelectField field="Right_PHONENUMBERTYPENAME" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1302" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="bec.bentityid" selected="False" type="Int32" size="4" />
+            <SelectField field="VendorContactID_SK" selected="True" />
+            <SelectField field="CONTACTTYPENAME" selected="True" rename="ContactType" />
+            <SelectField field="TITLE" selected="True" rename="Title" />
+            <SelectField field="FIRSTNAME" selected="True" rename="FirstName" />
+            <SelectField field="MIDDLENAME" selected="True" rename="MiddleName" />
+            <SelectField field="LASTNAME" selected="True" rename="LastName" />
+            <SelectField field="SUFFIX" selected="True" rename="Suffix" />
+            <SelectField field="PHONENUMBER" selected="True" rename="PhoneNumber" />
+            <SelectField field="PHONENUMBERTYPENAME" selected="True" rename="PhoneNumberType" />
+            <SelectField field="EMAILADDRESS" selected="True" rename="EmailAddress" />
+            <SelectField field="EMAILPROMOTION" selected="True" rename="EmailPromotion" />
+            <SelectField field="JobID" selected="True" />
+            <SelectField field="CreatedDate" selected="True" type="DateTime" size="19" />
+            <SelectField field="ModifiedDate" selected="True" type="DateTime" size="19" />
+            <SelectField field="VendorID_SK" selected="True" />
+            <SelectField field="VendorName" selected="False" />
+            <SelectField field="AccountNumber" selected="False" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="*Unknown" selected="True" />
+            <SelectField field="PERSONID" selected="False" />
+            <SelectField field="CONTACTTYPEID" selected="False" />
+            <SelectField field="ct.contacttypeid" selected="False" />
+            <SelectField field="p.bentityid" selected="False" />
+            <SelectField field="ea.bentityid" selected="False" />
+            <SelectField field="pp.bentityid" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1170" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.WorkflowFileName]" field="JobID" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="CreatedDate" size="1073741823" type="V_WString" />
+            <FormulaField expression="DateTimeNow()" field="ModifiedDate" size="1073741823" type="V_WString" />
+            <FormulaField expression="'1,2,6'" field="SOR_ID" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>JobID = [Engine.WorkflowFileName]
+CreatedDate = DateTimeNow()
+ModifiedDate = Dat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1158" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimvendor.VendorID_SK,
+	purchasingdw.dimvendor.AccountNumber,
+	purchasingdw.dimvendor.VendorName 
+from purchasingdw.dimvendor</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select purchasingdw.dimvendo...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="VendorID_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimvendor.VendorID_SK,&#xA;	purchasingdw.dimvendor.AccountNumber,&#xA;	purchasingdw.dimvendor.VendorName &#xA;from purchasingdw.dimvendor" type="Int32" />
+            <Field name="AccountNumber" size="15" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimvendor.VendorID_SK,&#xA;	purchasingdw.dimvendor.AccountNumber,&#xA;	purchasingdw.dimvendor.VendorName &#xA;from purchasingdw.dimvendor" type="V_String" />
+            <Field name="VendorName" size="50" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimvendor.VendorID_SK,&#xA;	purchasingdw.dimvendor.AccountNumber,&#xA;	purchasingdw.dimvendor.VendorName &#xA;from purchasingdw.dimvendor" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1302" y="546" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="VendorName" />
+            <Field field="AccountNumber" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="VendorName" />
+            <Field field="AccountNumber" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_VendorName" selected="False" input="Left_" />
+                <SelectField field="Left_JobID" selected="True" input="Left_" type="WString" size="64" />
+                <SelectField field="Left_SOR_ID" selected="True" input="Left_" type="WString" size="64" />
+                <SelectField field="Right_AccountNumber" selected="False" rename="Right_AccountNumber" input="Right_" />
+                <SelectField field="Right_VendorName" selected="False" rename="Right_VendorName" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1410" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||purchasingdw.dimvendorcontacts</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=purchasingdw.dimvendorcontac...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="1314" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>VendorContactID_SK</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="9" Connection="Left" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Unique" />
+      <Destination ToolID="12" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="12" Connection="Join" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="12" Connection="Left" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Unique" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="22" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>dimvendorcontacts</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

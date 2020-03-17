@@ -1,0 +1,1542 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,
+	EMPLOYEE.NATIONALIDNUMBER,
+	EMPLOYEE.LOGINID,
+	EMPLOYEE.JOBTITLE,
+	EMPLOYEE.BIRTHDATE,
+	EMPLOYEE.MARITALSTATUS,
+	EMPLOYEE.GENDER,
+	EMPLOYEE.HIREDATE,
+	EMPLOYEE.SALARIEDFLAG,
+	EMPLOYEE.VACATIONHOURS,
+	EMPLOYEE.SICKLEAVEHOURS,
+	EMPLOYEE.CURRENTFLAG 
+from EMPLOYEE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_HR
+Query=select EMPLOYEE.BUSINESSENTI...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" />
+            <Field name="NATIONALIDNUMBER" size="15" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" />
+            <Field name="LOGINID" size="256" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="V_WString" />
+            <Field name="JOBTITLE" size="50" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="V_WString" />
+            <Field name="BIRTHDATE" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="DateTime" />
+            <Field name="MARITALSTATUS" size="1" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" />
+            <Field name="GENDER" size="1" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" />
+            <Field name="HIREDATE" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="DateTime" />
+            <Field name="SALARIEDFLAG" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" />
+            <Field name="VACATIONHOURS" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" />
+            <Field name="SICKLEAVEHOURS" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" />
+            <Field name="CURRENTFLAG" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA;	EMPLOYEE.NATIONALIDNUMBER,&#xA;	EMPLOYEE.LOGINID,&#xA;	EMPLOYEE.JOBTITLE,&#xA;	EMPLOYEE.BIRTHDATE,&#xA;	EMPLOYEE.MARITALSTATUS,&#xA;	EMPLOYEE.GENDER,&#xA;	EMPLOYEE.HIREDATE,&#xA;	EMPLOYEE.SALARIEDFLAG,&#xA;	EMPLOYEE.VACATIONHOURS,&#xA;	EMPLOYEE.SICKLEAVEHOURS,&#xA;	EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="90" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,
+	PERSON.PERSONTYPE,
+	PERSON.TITLE,
+	PERSON.FIRSTNAME,
+	PERSON.MIDDLENAME,
+	PERSON.LASTNAME,
+	PERSON.SUFFIX,
+	PERSON.EMAILPROMOTION 
+from PERSON</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select PERSON.BUSINESSENTITY...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.PERSONTYPE,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" />
+            <Field name="PERSONTYPE" size="2" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.PERSONTYPE,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" />
+            <Field name="TITLE" size="8" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.PERSONTYPE,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" />
+            <Field name="FIRSTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.PERSONTYPE,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" />
+            <Field name="MIDDLENAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.PERSONTYPE,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" />
+            <Field name="LASTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.PERSONTYPE,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" />
+            <Field name="SUFFIX" size="10" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.PERSONTYPE,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" />
+            <Field name="EMAILPROMOTION" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA;	PERSON.PERSONTYPE,&#xA;	PERSON.TITLE,&#xA;	PERSON.FIRSTNAME,&#xA;	PERSON.MIDDLENAME,&#xA;	PERSON.LASTNAME,&#xA;	PERSON.SUFFIX,&#xA;	PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="390" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="EmployeeID_SK" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_EmployeeID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_LOGINID" selected="True" input="Left_" />
+                <SelectField field="Left_JOBTITLE" selected="True" input="Left_" />
+                <SelectField field="Left_BIRTHDATE" selected="True" input="Left_" />
+                <SelectField field="Left_MARITALSTATUS" selected="True" input="Left_" />
+                <SelectField field="Left_GENDER" selected="True" input="Left_" />
+                <SelectField field="Left_HIREDATE" selected="True" input="Left_" />
+                <SelectField field="Left_SALARIEDFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_VACATIONHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_SICKLEAVEHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_CURRENTFLAG" selected="True" input="Left_" />
+                <SelectField field="Right_BUSINESSENTITYID" selected="False" rename="Right_BUSINESSENTITYID" input="Right_" />
+                <SelectField field="Right_PERSONTYPE" selected="True" input="Right_" />
+                <SelectField field="Right_TITLE" selected="True" input="Right_" />
+                <SelectField field="Right_FIRSTNAME" selected="True" input="Right_" />
+                <SelectField field="Right_MIDDLENAME" selected="True" input="Right_" />
+                <SelectField field="Right_LASTNAME" selected="True" input="Right_" />
+                <SelectField field="Right_SUFFIX" selected="True" input="Right_" />
+                <SelectField field="Right_EMAILPROMOTION" selected="True" input="Right_" />
+                <SelectField field="Left_BUSINESSENTITYID" selected="False" rename="EmployeeID_SK" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="486" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="EmployeeID_SK" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_EmployeeID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_LOGINID" selected="True" input="Left_" />
+                <SelectField field="Left_JOBTITLE" selected="True" input="Left_" />
+                <SelectField field="Left_BIRTHDATE" selected="True" input="Left_" />
+                <SelectField field="Left_MARITALSTATUS" selected="True" input="Left_" />
+                <SelectField field="Left_GENDER" selected="True" input="Left_" />
+                <SelectField field="Left_HIREDATE" selected="True" input="Left_" />
+                <SelectField field="Left_SALARIEDFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_VACATIONHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_SICKLEAVEHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_CURRENTFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_SUFFIX" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Right_ADDRESSID" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="234" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select BUSINESSENTITYADDRESS.BUSINESSENTITYID,
+	BUSINESSENTITYADDRESS.ADDRESSID 
+from BUSINESSENTITYADDRESS</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select BUSINESSENTITYADDRESS...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYADDRESS.BUSINESSENTITYID,&#xA;	BUSINESSENTITYADDRESS.ADDRESSID &#xA;from BUSINESSENTITYADDRESS" type="Int64" />
+            <Field description="PrimaryKey" name="ADDRESSID" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYADDRESS.BUSINESSENTITYID,&#xA;	BUSINESSENTITYADDRESS.ADDRESSID &#xA;from BUSINESSENTITYADDRESS" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="414" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,
+	ADDRESS.ADDRESSLINE1,
+	ADDRESS.ADDRESSLINE2,
+	ADDRESS.CITY,
+	ADDRESS.POSTALCODE,
+	ADDRESS.STATEPROVINCEID 
+from ADDRESS</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select ADDRESS.ADDRESSID,
+	...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="ADDRESSID" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA;	ADDRESS.ADDRESSLINE1,&#xA;	ADDRESS.ADDRESSLINE2,&#xA;	ADDRESS.CITY,&#xA;	ADDRESS.POSTALCODE,&#xA;	ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="Int64" />
+            <Field name="ADDRESSLINE1" size="60" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA;	ADDRESS.ADDRESSLINE1,&#xA;	ADDRESS.ADDRESSLINE2,&#xA;	ADDRESS.CITY,&#xA;	ADDRESS.POSTALCODE,&#xA;	ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="V_WString" />
+            <Field name="ADDRESSLINE2" size="60" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA;	ADDRESS.ADDRESSLINE1,&#xA;	ADDRESS.ADDRESSLINE2,&#xA;	ADDRESS.CITY,&#xA;	ADDRESS.POSTALCODE,&#xA;	ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="V_WString" />
+            <Field name="CITY" size="30" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA;	ADDRESS.ADDRESSLINE1,&#xA;	ADDRESS.ADDRESSLINE2,&#xA;	ADDRESS.CITY,&#xA;	ADDRESS.POSTALCODE,&#xA;	ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="WString" />
+            <Field name="POSTALCODE" size="15" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA;	ADDRESS.ADDRESSLINE1,&#xA;	ADDRESS.ADDRESSLINE2,&#xA;	ADDRESS.CITY,&#xA;	ADDRESS.POSTALCODE,&#xA;	ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="WString" />
+            <Field name="STATEPROVINCEID" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA;	ADDRESS.ADDRESSLINE1,&#xA;	ADDRESS.ADDRESSLINE2,&#xA;	ADDRESS.CITY,&#xA;	ADDRESS.POSTALCODE,&#xA;	ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="582" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="EmployeeID_SK" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ADDRESSID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_EmployeeID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_LOGINID" selected="True" input="Left_" />
+                <SelectField field="Left_JOBTITLE" selected="True" input="Left_" />
+                <SelectField field="Left_BIRTHDATE" selected="True" input="Left_" />
+                <SelectField field="Left_MARITALSTATUS" selected="True" input="Left_" />
+                <SelectField field="Left_GENDER" selected="True" input="Left_" />
+                <SelectField field="Left_HIREDATE" selected="True" input="Left_" />
+                <SelectField field="Left_SALARIEDFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_VACATIONHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_SICKLEAVEHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_CURRENTFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_SUFFIX" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Right_ADDRESSID" selected="False" rename="Right_ADDRESSID" input="Right_" />
+                <SelectField field="Right_ADDRESSLINE1" selected="True" input="Right_" />
+                <SelectField field="Right_ADDRESSLINE2" selected="True" input="Right_" />
+                <SelectField field="Right_CITY" selected="True" input="Right_" />
+                <SelectField field="Right_POSTALCODE" selected="True" input="Right_" />
+                <SelectField field="Right_STATEPROVINCEID" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="630" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select PERSONPHONE.BUSINESSENTITYID,
+	PERSONPHONE.PHONENUMBER,
+	PERSONPHONE.PHONENUMBERTYPEID 
+from PERSONPHONE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select PERSONPHONE.BUSINESSE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_AW_Person|||select PERSONPHONE.BUSINESSENTITYID,&#xA;	PERSONPHONE.PHONENUMBER,&#xA;	PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="Int64" />
+            <Field description="PrimaryKey" name="PHONENUMBER" size="25" source="File: aka:Oracle_AW_Person|||select PERSONPHONE.BUSINESSENTITYID,&#xA;	PERSONPHONE.PHONENUMBER,&#xA;	PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="WString" />
+            <Field description="PrimaryKey" name="PHONENUMBERTYPEID" source="File: aka:Oracle_AW_Person|||select PERSONPHONE.BUSINESSENTITYID,&#xA;	PERSONPHONE.PHONENUMBER,&#xA;	PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="870" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="EmployeeID_SK" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_EmployeeID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_LOGINID" selected="True" input="Left_" />
+                <SelectField field="Left_JOBTITLE" selected="True" input="Left_" />
+                <SelectField field="Left_BIRTHDATE" selected="True" input="Left_" />
+                <SelectField field="Left_MARITALSTATUS" selected="True" input="Left_" />
+                <SelectField field="Left_GENDER" selected="True" input="Left_" />
+                <SelectField field="Left_HIREDATE" selected="True" input="Left_" />
+                <SelectField field="Left_SALARIEDFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_VACATIONHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_SICKLEAVEHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_CURRENTFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_SUFFIX" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE1" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE2" selected="True" input="Left_" />
+                <SelectField field="Left_CITY" selected="True" input="Left_" />
+                <SelectField field="Left_POSTALCODE" selected="True" input="Left_" />
+                <SelectField field="Left_STATEPROVINCEID" selected="True" input="Left_" />
+                <SelectField field="Right_PHONENUMBER" selected="True" input="Right_" />
+                <SelectField field="Right_PHONENUMBERTYPEID" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="678" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field description="PrimaryKey" name="EmployeeID_SK" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="1" />
+                <Field name="NATIONALIDNUMBER" size="15" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="2" />
+                <Field name="LOGINID" size="256" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="V_WString" column="3" />
+                <Field name="JOBTITLE" size="50" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="V_WString" column="4" />
+                <Field name="BIRTHDATE" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="DateTime" column="5" />
+                <Field name="MARITALSTATUS" size="1" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="6" />
+                <Field name="GENDER" size="1" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="7" />
+                <Field name="HIREDATE" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="DateTime" column="8" />
+                <Field name="SALARIEDFLAG" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="9" />
+                <Field name="VACATIONHOURS" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="10" />
+                <Field name="SICKLEAVEHOURS" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="11" />
+                <Field name="CURRENTFLAG" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="12" />
+                <Field name="PERSONTYPE" size="2" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="13" />
+                <Field name="TITLE" size="8" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="14" />
+                <Field name="FIRSTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="15" />
+                <Field name="MIDDLENAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="16" />
+                <Field name="LASTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="17" />
+                <Field name="SUFFIX" size="10" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="18" />
+                <Field name="EMAILPROMOTION" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" column="19" />
+                <Field name="ADDRESSLINE1" size="60" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="V_WString" column="20" />
+                <Field name="ADDRESSLINE2" size="60" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="V_WString" column="21" />
+                <Field name="CITY" size="30" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="WString" column="22" />
+                <Field name="POSTALCODE" size="15" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="WString" column="23" />
+                <Field name="STATEPROVINCEID" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="Int64" column="24" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field description="PrimaryKey" name="EmployeeID_SK" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="1" />
+                <Field name="NATIONALIDNUMBER" size="15" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="2" />
+                <Field name="LOGINID" size="256" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="V_WString" column="3" />
+                <Field name="JOBTITLE" size="50" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="V_WString" column="4" />
+                <Field name="BIRTHDATE" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="DateTime" column="5" />
+                <Field name="MARITALSTATUS" size="1" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="6" />
+                <Field name="GENDER" size="1" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="7" />
+                <Field name="HIREDATE" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="DateTime" column="8" />
+                <Field name="SALARIEDFLAG" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="9" />
+                <Field name="VACATIONHOURS" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="10" />
+                <Field name="SICKLEAVEHOURS" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="11" />
+                <Field name="CURRENTFLAG" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="12" />
+                <Field name="PERSONTYPE" size="2" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="13" />
+                <Field name="TITLE" size="8" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="14" />
+                <Field name="FIRSTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="15" />
+                <Field name="MIDDLENAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="16" />
+                <Field name="LASTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="17" />
+                <Field name="SUFFIX" size="10" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="18" />
+                <Field name="EMAILPROMOTION" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" column="19" />
+                <Field description="PrimaryKey" name="ADDRESSID" source="File: aka:Oracle_AW_Person|||select BUSINESSENTITYADDRESS.BUSINESSENTITYID,&#xA; BUSINESSENTITYADDRESS.ADDRESSID &#xA;from BUSINESSENTITYADDRESS" type="Int64" column="25" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="966" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field description="PrimaryKey" name="EmployeeID_SK" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="1" />
+                <Field name="NATIONALIDNUMBER" size="15" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="2" />
+                <Field name="LOGINID" size="256" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="V_WString" column="3" />
+                <Field name="JOBTITLE" size="50" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="V_WString" column="4" />
+                <Field name="BIRTHDATE" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="DateTime" column="5" />
+                <Field name="MARITALSTATUS" size="1" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="6" />
+                <Field name="GENDER" size="1" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="7" />
+                <Field name="HIREDATE" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="DateTime" column="8" />
+                <Field name="SALARIEDFLAG" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="9" />
+                <Field name="VACATIONHOURS" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="10" />
+                <Field name="SICKLEAVEHOURS" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="11" />
+                <Field name="CURRENTFLAG" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="12" />
+                <Field name="PERSONTYPE" size="2" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="13" />
+                <Field name="TITLE" size="8" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="14" />
+                <Field name="FIRSTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="15" />
+                <Field name="MIDDLENAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="16" />
+                <Field name="LASTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="17" />
+                <Field name="SUFFIX" size="10" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="18" />
+                <Field name="EMAILPROMOTION" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" column="19" />
+                <Field name="ADDRESSLINE1" size="60" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="V_WString" column="20" />
+                <Field name="ADDRESSLINE2" size="60" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="V_WString" column="21" />
+                <Field name="CITY" size="30" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="WString" column="22" />
+                <Field name="POSTALCODE" size="15" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="WString" column="23" />
+                <Field name="STATEPROVINCEID" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="Int64" column="24" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field description="PrimaryKey" name="EmployeeID_SK" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="1" />
+                <Field name="NATIONALIDNUMBER" size="15" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="2" />
+                <Field name="LOGINID" size="256" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="V_WString" column="3" />
+                <Field name="JOBTITLE" size="50" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="V_WString" column="4" />
+                <Field name="BIRTHDATE" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="DateTime" column="5" />
+                <Field name="MARITALSTATUS" size="1" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="6" />
+                <Field name="GENDER" size="1" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="WString" column="7" />
+                <Field name="HIREDATE" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="DateTime" column="8" />
+                <Field name="SALARIEDFLAG" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="9" />
+                <Field name="VACATIONHOURS" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="10" />
+                <Field name="SICKLEAVEHOURS" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="11" />
+                <Field name="CURRENTFLAG" source="File: aka:Oracle_AW_HR|||select EMPLOYEE.BUSINESSENTITYID,&#xA; EMPLOYEE.NATIONALIDNUMBER,&#xA; EMPLOYEE.LOGINID,&#xA; EMPLOYEE.JOBTITLE,&#xA; EMPLOYEE.BIRTHDATE,&#xA; EMPLOYEE.MARITALSTATUS,&#xA; EMPLOYEE.GENDER,&#xA; EMPLOYEE.HIREDATE,&#xA; EMPLOYEE.SALARIEDFLAG,&#xA; EMPLOYEE.VACATIONHOURS,&#xA; EMPLOYEE.SICKLEAVEHOURS,&#xA; EMPLOYEE.CURRENTFLAG &#xA;from EMPLOYEE" type="Int64" column="12" />
+                <Field name="PERSONTYPE" size="2" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="13" />
+                <Field name="TITLE" size="8" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="14" />
+                <Field name="FIRSTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="15" />
+                <Field name="MIDDLENAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="16" />
+                <Field name="LASTNAME" size="50" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="V_WString" column="17" />
+                <Field name="SUFFIX" size="10" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="WString" column="18" />
+                <Field name="EMAILPROMOTION" source="File: aka:Oracle_AW_Person|||select PERSON.BUSINESSENTITYID,&#xA; PERSON.PERSONTYPE,&#xA; PERSON.TITLE,&#xA; PERSON.FIRSTNAME,&#xA; PERSON.MIDDLENAME,&#xA; PERSON.LASTNAME,&#xA; PERSON.SUFFIX,&#xA; PERSON.EMAILPROMOTION &#xA;from PERSON" type="Int64" column="19" />
+                <Field name="ADDRESSLINE1" size="60" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="V_WString" column="20" />
+                <Field name="ADDRESSLINE2" size="60" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="V_WString" column="21" />
+                <Field name="CITY" size="30" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="WString" column="22" />
+                <Field name="POSTALCODE" size="15" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="WString" column="23" />
+                <Field name="STATEPROVINCEID" source="File: aka:Oracle_AW_Person|||select ADDRESS.ADDRESSID,&#xA; ADDRESS.ADDRESSLINE1,&#xA; ADDRESS.ADDRESSLINE2,&#xA; ADDRESS.CITY,&#xA; ADDRESS.POSTALCODE,&#xA; ADDRESS.STATEPROVINCEID &#xA;from ADDRESS" type="Int64" column="24" />
+                <Field description="PrimaryKey" name="PHONENUMBER" size="25" source="File: aka:Oracle_AW_Person|||select PERSONPHONE.BUSINESSENTITYID,&#xA; PERSONPHONE.PHONENUMBER,&#xA; PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="WString" column="25" />
+                <Field description="PrimaryKey" name="PHONENUMBERTYPEID" source="File: aka:Oracle_AW_Person|||select PERSONPHONE.BUSINESSENTITYID,&#xA; PERSONPHONE.PHONENUMBER,&#xA; PERSONPHONE.PHONENUMBERTYPEID &#xA;from PERSONPHONE" type="Int64" column="26" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="846" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select PHONENUMBERTYPE.PHONENUMBERTYPEID,
+	PHONENUMBERTYPE.PHONENUMBERTYPENAME 
+from PHONENUMBERTYPE</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select PHONENUMBERTYPE.PHONE...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="PHONENUMBERTYPEID" source="File: aka:Oracle_AW_Person|||select PHONENUMBERTYPE.PHONENUMBERTYPEID,&#xA;	PHONENUMBERTYPE.PHONENUMBERTYPENAME &#xA;from PHONENUMBERTYPE" type="Int64" />
+            <Field name="PHONENUMBERTYPENAME" size="50" source="File: aka:Oracle_AW_Person|||select PHONENUMBERTYPE.PHONENUMBERTYPEID,&#xA;	PHONENUMBERTYPE.PHONENUMBERTYPENAME &#xA;from PHONENUMBERTYPE" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1062" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="PHONENUMBERTYPEID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="PHONENUMBERTYPEID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_EmployeeID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_LOGINID" selected="True" input="Left_" />
+                <SelectField field="Left_JOBTITLE" selected="True" input="Left_" />
+                <SelectField field="Left_BIRTHDATE" selected="True" input="Left_" />
+                <SelectField field="Left_MARITALSTATUS" selected="True" input="Left_" />
+                <SelectField field="Left_GENDER" selected="True" input="Left_" />
+                <SelectField field="Left_HIREDATE" selected="True" input="Left_" />
+                <SelectField field="Left_SALARIEDFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_VACATIONHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_SICKLEAVEHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_CURRENTFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_SUFFIX" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE1" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE2" selected="True" input="Left_" />
+                <SelectField field="Left_CITY" selected="True" input="Left_" />
+                <SelectField field="Left_POSTALCODE" selected="True" input="Left_" />
+                <SelectField field="Left_STATEPROVINCEID" selected="True" input="Left_" />
+                <SelectField field="Left_PHONENUMBER" selected="True" input="Left_" />
+                <SelectField field="Right_PHONENUMBERTYPEID" selected="False" rename="Right_PHONENUMBERTYPEID" input="Right_" />
+                <SelectField field="Right_PHONENUMBERTYPENAME" selected="True" rename="PhoneNumberType" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="774" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="EmployeeID_SK" selected="True" />
+            <SelectField field="NATIONALIDNUMBER" selected="True" />
+            <SelectField field="LOGINID" selected="True" />
+            <SelectField field="JOBTITLE" selected="True" />
+            <SelectField field="BIRTHDATE" selected="True" />
+            <SelectField field="MARITALSTATUS" selected="True" />
+            <SelectField field="GENDER" selected="True" />
+            <SelectField field="HIREDATE" selected="True" />
+            <SelectField field="SALARIEDFLAG" selected="True" />
+            <SelectField field="VACATIONHOURS" selected="True" />
+            <SelectField field="SICKLEAVEHOURS" selected="True" />
+            <SelectField field="CURRENTFLAG" selected="True" />
+            <SelectField field="PERSONTYPE" selected="True" />
+            <SelectField field="TITLE" selected="True" />
+            <SelectField field="FIRSTNAME" selected="True" />
+            <SelectField field="MIDDLENAME" selected="True" />
+            <SelectField field="LASTNAME" selected="True" />
+            <SelectField field="SUFFIX" selected="True" />
+            <SelectField field="EMAILPROMOTION" selected="True" />
+            <SelectField field="ADDRESSLINE1" selected="True" />
+            <SelectField field="ADDRESSLINE2" selected="True" />
+            <SelectField field="CITY" selected="True" />
+            <SelectField field="POSTALCODE" selected="True" />
+            <SelectField field="STATEPROVINCEID" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1146" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1038" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="17">aka:Oracle_AW_Person|||select EMAILADDRESS.BUSINESSENTITYID,
+	EMAILADDRESS.EMAILADDRESS 
+from EMAILADDRESS</File>
+          <FormatSpecificOptions>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <NoProgress>False</NoProgress>
+            <CacheData>False</CacheData>
+            <PostSQL />
+            <PreSQL />
+            <ForceSqlWcharSupport>False</ForceSqlWcharSupport>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:Oracle_AW_Person
+Query=select EMAILADDRESS.BUSINESS...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="BUSINESSENTITYID" source="File: aka:Oracle_AW_Person|||select EMAILADDRESS.BUSINESSENTITYID,&#xA;	EMAILADDRESS.EMAILADDRESS &#xA;from EMAILADDRESS" type="Int64" />
+            <Field name="EMAILADDRESS" size="50" source="File: aka:Oracle_AW_Person|||select EMAILADDRESS.BUSINESSENTITYID,&#xA;	EMAILADDRESS.EMAILADDRESS &#xA;from EMAILADDRESS" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1242" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="EmployeeID_SK" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_EmployeeID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_LOGINID" selected="True" input="Left_" />
+                <SelectField field="Left_JOBTITLE" selected="True" input="Left_" />
+                <SelectField field="Left_BIRTHDATE" selected="True" input="Left_" />
+                <SelectField field="Left_MARITALSTATUS" selected="True" input="Left_" />
+                <SelectField field="Left_GENDER" selected="True" input="Left_" />
+                <SelectField field="Left_HIREDATE" selected="True" input="Left_" />
+                <SelectField field="Left_SALARIEDFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_VACATIONHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_SICKLEAVEHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_CURRENTFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_SUFFIX" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE1" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE2" selected="True" input="Left_" />
+                <SelectField field="Left_CITY" selected="True" input="Left_" />
+                <SelectField field="Left_POSTALCODE" selected="True" input="Left_" />
+                <SelectField field="Left_STATEPROVINCEID" selected="True" input="Left_" />
+                <SelectField field="Left_PHONENUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_PhoneNumberType" selected="True" input="Left_" />
+                <SelectField field="Right_EMAILADDRESS" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1434" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="EmployeeID_SK" selected="True" />
+            <SelectField field="NATIONALIDNUMBER" selected="True" />
+            <SelectField field="LOGINID" selected="True" />
+            <SelectField field="JOBTITLE" selected="True" />
+            <SelectField field="BIRTHDATE" selected="True" />
+            <SelectField field="MARITALSTATUS" selected="True" />
+            <SelectField field="GENDER" selected="True" />
+            <SelectField field="HIREDATE" selected="True" />
+            <SelectField field="SALARIEDFLAG" selected="True" />
+            <SelectField field="VACATIONHOURS" selected="True" />
+            <SelectField field="SICKLEAVEHOURS" selected="True" />
+            <SelectField field="CURRENTFLAG" selected="True" />
+            <SelectField field="PERSONTYPE" selected="True" />
+            <SelectField field="TITLE" selected="True" />
+            <SelectField field="FIRSTNAME" selected="True" />
+            <SelectField field="MIDDLENAME" selected="True" />
+            <SelectField field="LASTNAME" selected="True" />
+            <SelectField field="SUFFIX" selected="True" />
+            <SelectField field="EMAILPROMOTION" selected="True" />
+            <SelectField field="ADDRESSLINE1" selected="True" />
+            <SelectField field="ADDRESSLINE2" selected="True" />
+            <SelectField field="CITY" selected="True" />
+            <SelectField field="POSTALCODE" selected="True" />
+            <SelectField field="STATEPROVINCEID" selected="True" />
+            <SelectField field="PHONENUMBER" selected="True" />
+            <SelectField field="PhoneNumberType" selected="True" />
+            <SelectField field="EMAILADDRESS" selected="True" />
+            <SelectField field="SOR_ID" selected="True" />
+            <SelectField field="JobID" selected="True" />
+            <SelectField field="CreatedDate" selected="True" />
+            <SelectField field="ModifiedDate" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1338" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="'1,2,3,6'" field="SOR_ID" size="64" type="WString" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="JobID" size="64" type="WString" />
+            <FormulaField expression="DateTimeNow()" field="CreatedDate" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="ModifiedDate" size="19" type="DateTime" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>SOR_ID = '1,2,3,6'
+JobID = [Engine.WorkflowFileName]
+CreatedDate = DateTimeNow()...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1554" y="474" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="CITY" />
+            <Field field="POSTALCODE" />
+            <Field field="STATEPROVINCEID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="City" />
+            <Field field="PostalCode" />
+            <Field field="StateProvinceID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_EmployeeID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_LOGINID" selected="True" input="Left_" />
+                <SelectField field="Left_JOBTITLE" selected="True" input="Left_" />
+                <SelectField field="Left_BIRTHDATE" selected="True" input="Left_" />
+                <SelectField field="Left_MARITALSTATUS" selected="True" input="Left_" />
+                <SelectField field="Left_GENDER" selected="True" input="Left_" />
+                <SelectField field="Left_HIREDATE" selected="True" input="Left_" />
+                <SelectField field="Left_SALARIEDFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_VACATIONHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_SICKLEAVEHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_CURRENTFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_SUFFIX" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE1" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE2" selected="True" input="Left_" />
+                <SelectField field="Left_PHONENUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_PhoneNumberType" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILADDRESS" selected="True" input="Left_" />
+                <SelectField field="Left_SOR_ID" selected="True" input="Left_" />
+                <SelectField field="Left_JobID" selected="True" input="Left_" />
+                <SelectField field="Left_CreatedDate" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Right_GeographyKey_SK" selected="True" input="Right_" />
+                <SelectField field="Right_City" selected="False" rename="Right_City" input="Right_" />
+                <SelectField field="Right_PostalCode" selected="False" rename="Right_PostalCode" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1446" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimgeography.GeographyKey_SK,
+	purchasingdw.dimgeography.City,
+	purchasingdw.dimgeography.PostalCode,
+	purchasingdw.dimgeography.StateProvinceCode,
+	purchasingdw.dimgeography.StateProvinceID 
+from purchasingdw.dimgeography</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select purchasingdw.dimgeogr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="GeographyKey_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimgeography.GeographyKey_SK,&#xA;	purchasingdw.dimgeography.City,&#xA;	purchasingdw.dimgeography.PostalCode,&#xA;	purchasingdw.dimgeography.StateProvinceCode,&#xA;	purchasingdw.dimgeography.StateProvinceID &#xA;from purchasingdw.dimgeography" type="Int32" />
+            <Field name="City" size="50" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimgeography.GeographyKey_SK,&#xA;	purchasingdw.dimgeography.City,&#xA;	purchasingdw.dimgeography.PostalCode,&#xA;	purchasingdw.dimgeography.StateProvinceCode,&#xA;	purchasingdw.dimgeography.StateProvinceID &#xA;from purchasingdw.dimgeography" type="V_String" />
+            <Field name="PostalCode" size="10" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimgeography.GeographyKey_SK,&#xA;	purchasingdw.dimgeography.City,&#xA;	purchasingdw.dimgeography.PostalCode,&#xA;	purchasingdw.dimgeography.StateProvinceCode,&#xA;	purchasingdw.dimgeography.StateProvinceID &#xA;from purchasingdw.dimgeography" type="V_String" />
+            <Field name="StateProvinceCode" size="3" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimgeography.GeographyKey_SK,&#xA;	purchasingdw.dimgeography.City,&#xA;	purchasingdw.dimgeography.PostalCode,&#xA;	purchasingdw.dimgeography.StateProvinceCode,&#xA;	purchasingdw.dimgeography.StateProvinceID &#xA;from purchasingdw.dimgeography" type="String" />
+            <Field name="StateProvinceID" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimgeography.GeographyKey_SK,&#xA;	purchasingdw.dimgeography.City,&#xA;	purchasingdw.dimgeography.PostalCode,&#xA;	purchasingdw.dimgeography.StateProvinceCode,&#xA;	purchasingdw.dimgeography.StateProvinceID &#xA;from purchasingdw.dimgeography" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="18" y="30" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderheader.EmployeeID 
+from aw2017neu__purchasing.purchaseorderheader</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select aw2017neu__purchasing...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="EmployeeID" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select aw2017neu__purchasing.purchaseorderheader.EmployeeID &#xA;from aw2017neu__purchasing.purchaseorderheader" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="198" y="42" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="EmployeeID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="BUSINESSENTITYID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_BUSINESSENTITYID" selected="True" rename="EmployeeID_SK" input="Right_" />
+                <SelectField field="Right_NATIONALIDNUMBER" selected="True" input="Right_" />
+                <SelectField field="Right_LOGINID" selected="True" input="Right_" />
+                <SelectField field="Right_JOBTITLE" selected="True" input="Right_" />
+                <SelectField field="Right_BIRTHDATE" selected="True" input="Right_" />
+                <SelectField field="Right_MARITALSTATUS" selected="True" input="Right_" />
+                <SelectField field="Right_GENDER" selected="True" input="Right_" />
+                <SelectField field="Right_HIREDATE" selected="True" input="Right_" />
+                <SelectField field="Right_SALARIEDFLAG" selected="True" input="Right_" />
+                <SelectField field="Right_VACATIONHOURS" selected="True" input="Right_" />
+                <SelectField field="Right_SICKLEAVEHOURS" selected="True" input="Right_" />
+                <SelectField field="Right_CURRENTFLAG" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="294" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="EmployeeID_SK" />
+            <Field field="NATIONALIDNUMBER" />
+            <Field field="LOGINID" />
+            <Field field="JOBTITLE" />
+            <Field field="BIRTHDATE" />
+            <Field field="MARITALSTATUS" />
+            <Field field="GENDER" />
+            <Field field="HIREDATE" />
+            <Field field="SALARIEDFLAG" />
+            <Field field="VACATIONHOURS" />
+            <Field field="SICKLEAVEHOURS" />
+            <Field field="CURRENTFLAG" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1746" y="618" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="BIRTHDATE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="FullDate_AlternateKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_EmployeeID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_LOGINID" selected="True" input="Left_" />
+                <SelectField field="Left_JOBTITLE" selected="True" input="Left_" />
+                <SelectField field="Left_BIRTHDATE" selected="False" rename="Left_BIRTHDATE" input="Left_" />
+                <SelectField field="Right_DateKey_SK" selected="True" rename="BirthDate" input="Right_" />
+                <SelectField field="Left_MARITALSTATUS" selected="True" input="Left_" />
+                <SelectField field="Left_GENDER" selected="True" input="Left_" />
+                <SelectField field="Left_HIREDATE" selected="True" input="Left_" />
+                <SelectField field="Left_SALARIEDFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_VACATIONHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_SICKLEAVEHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_CURRENTFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_SUFFIX" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE1" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE2" selected="True" input="Left_" />
+                <SelectField field="Left_PHONENUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_PhoneNumberType" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILADDRESS" selected="True" input="Left_" />
+                <SelectField field="Left_SOR_ID" selected="True" input="Left_" />
+                <SelectField field="Left_JobID" selected="True" input="Left_" />
+                <SelectField field="Left_CreatedDate" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Left_GeographyKey_SK" selected="True" input="Left_" />
+                <SelectField field="Right_FullDate_AlternateKey" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1578" y="774" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,
+	purchasingdw.dimdate.FullDate_AlternateKey 
+from purchasingdw.dimdate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select purchasingdw.dimdate....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="DateKey_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" />
+            <Field name="FullDate_AlternateKey" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="1746" y="786" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,
+	purchasingdw.dimdate.FullDate_AlternateKey 
+from purchasingdw.dimdate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select purchasingdw.dimdate....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="DateKey_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" />
+            <Field name="FullDate_AlternateKey" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1902" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="HIREDATE" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="FullDate_AlternateKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_EmployeeID_SK" selected="True" input="Left_" />
+                <SelectField field="Left_NATIONALIDNUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_LOGINID" selected="True" input="Left_" />
+                <SelectField field="Left_JOBTITLE" selected="True" input="Left_" />
+                <SelectField field="Left_BirthDate" selected="True" input="Left_" />
+                <SelectField field="Right_DateKey_SK" selected="True" rename="HireDate" input="Right_" />
+                <SelectField field="Left_MARITALSTATUS" selected="True" input="Left_" />
+                <SelectField field="Left_GENDER" selected="True" input="Left_" />
+                <SelectField field="Left_HIREDATE" selected="False" input="Left_" />
+                <SelectField field="Left_SALARIEDFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_VACATIONHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_SICKLEAVEHOURS" selected="True" input="Left_" />
+                <SelectField field="Left_CURRENTFLAG" selected="True" input="Left_" />
+                <SelectField field="Left_PERSONTYPE" selected="True" input="Left_" />
+                <SelectField field="Left_TITLE" selected="True" input="Left_" />
+                <SelectField field="Left_FIRSTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_MIDDLENAME" selected="True" input="Left_" />
+                <SelectField field="Left_LASTNAME" selected="True" input="Left_" />
+                <SelectField field="Left_SUFFIX" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILPROMOTION" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE1" selected="True" input="Left_" />
+                <SelectField field="Left_ADDRESSLINE2" selected="True" input="Left_" />
+                <SelectField field="Left_PHONENUMBER" selected="True" input="Left_" />
+                <SelectField field="Left_PhoneNumberType" selected="True" input="Left_" />
+                <SelectField field="Left_EMAILADDRESS" selected="True" input="Left_" />
+                <SelectField field="Left_SOR_ID" selected="True" input="Left_" />
+                <SelectField field="Left_JobID" selected="True" input="Left_" />
+                <SelectField field="Left_CreatedDate" selected="True" input="Left_" />
+                <SelectField field="Left_ModifiedDate" selected="True" input="Left_" />
+                <SelectField field="Left_GeographyKey_SK" selected="True" input="Left_" />
+                <SelectField field="Right_FullDate_AlternateKey" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="2034" y="678" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||purchasingdw.dimemployee</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=purchasingdw.dimemployee</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="26" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="26" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Unique" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="4" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="4" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Join" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="7" Connection="Left" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="9" Connection="Left" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="13" Connection="Left" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Join" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="22" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="22" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Join" />
+      <Destination ToolID="28" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="28" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Join" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Join" />
+      <Destination ToolID="32" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="32" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Join" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>dimemployee</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

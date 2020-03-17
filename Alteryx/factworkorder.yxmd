@@ -1,0 +1,867 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,
+	Production.WorkOrder.ProductID,
+	Production.WorkOrder.OrderQty,
+	Production.WorkOrder.StockedQty,
+	Production.WorkOrder.ScrappedQty,
+	Production.WorkOrder.StartDate,
+	Production.WorkOrder.EndDate,
+	Production.WorkOrder.DueDate,
+	Production.WorkOrder.ScrapReasonID 
+from Production.WorkOrder</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:SQLServer_AW
+Query=select Production.WorkOrder....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="WorkOrderID" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.ProductID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" />
+            <Field name="ProductID" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.ProductID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" />
+            <Field name="OrderQty" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.ProductID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" />
+            <Field name="StockedQty" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.ProductID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" />
+            <Field name="ScrappedQty" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.ProductID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int16" />
+            <Field name="StartDate" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.ProductID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="DateTime" />
+            <Field name="EndDate" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.ProductID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="DateTime" />
+            <Field name="DueDate" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.ProductID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="DateTime" />
+            <Field name="ScrapReasonID" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA;	Production.WorkOrder.ProductID,&#xA;	Production.WorkOrder.OrderQty,&#xA;	Production.WorkOrder.StockedQty,&#xA;	Production.WorkOrder.ScrappedQty,&#xA;	Production.WorkOrder.StartDate,&#xA;	Production.WorkOrder.EndDate,&#xA;	Production.WorkOrder.DueDate,&#xA;	Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int16" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <CachedCosmeticName />
+          <File RecordLimit="" FileFormat="23">aka:SQLServer_AW|||select Production.Product.ProductID 
+from Production.Product</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:SQLServer_AW
+Query=select Production.Product.Pr...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="ProductID" source="File: aka:SQLServer_AW|||select Production.Product.ProductID &#xA;from Production.Product" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="222" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ProductID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_WorkOrderID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductID" selected="True" rename="ProductID_SK" input="Left_" />
+                <SelectField field="Left_OrderQty" selected="True" input="Left_" />
+                <SelectField field="Left_StockedQty" selected="True" input="Left_" />
+                <SelectField field="Left_ScrappedQty" selected="True" input="Left_" />
+                <SelectField field="Left_StartDate" selected="True" input="Left_" />
+                <SelectField field="Left_EndDate" selected="True" input="Left_" />
+                <SelectField field="Left_DueDate" selected="True" input="Left_" />
+                <SelectField field="Left_ScrapReasonID" selected="True" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="210" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,
+	purchasingdw.dimdate.FullDate_AlternateKey 
+from purchasingdw.dimdate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select purchasingdw.dimdate....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="DateKey_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" />
+            <Field name="FullDate_AlternateKey" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="414" y="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StartDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="FullDate_AlternateKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_WorkOrderID" selected="True" input="Left_" />
+                <SelectField field="Left_OrderQty" selected="True" input="Left_" />
+                <SelectField field="Left_StockedQty" selected="True" input="Left_" />
+                <SelectField field="Left_ScrappedQty" selected="True" input="Left_" />
+                <SelectField field="Right_DateKey_SK" selected="True" rename="StartDate" input="Right_" />
+                <SelectField field="Left_StartDate" selected="False" input="Left_" />
+                <SelectField field="Left_EndDate" selected="True" input="Left_" />
+                <SelectField field="Left_DueDate" selected="True" input="Left_" />
+                <SelectField field="Left_ScrapReasonID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductID_SK" selected="True" input="Left_" />
+                <SelectField field="Right_FullDate_AlternateKey" selected="False" input="Right_" />
+                <SelectField field="Left_ProductID" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="366" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,
+	purchasingdw.dimdate.FullDate_AlternateKey 
+from purchasingdw.dimdate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select purchasingdw.dimdate....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="DateKey_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" />
+            <Field name="FullDate_AlternateKey" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="510" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="EndDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="FullDate_AlternateKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_WorkOrderID" selected="True" input="Left_" />
+                <SelectField field="Left_OrderQty" selected="True" input="Left_" />
+                <SelectField field="Left_StockedQty" selected="True" input="Left_" />
+                <SelectField field="Left_ScrappedQty" selected="True" input="Left_" />
+                <SelectField field="Left_StartDate" selected="True" input="Left_" />
+                <SelectField field="Left_DueDate" selected="True" input="Left_" />
+                <SelectField field="Left_ScrapReasonID" selected="True" input="Left_" />
+                <SelectField field="Left_ProductID_SK" selected="True" input="Left_" />
+                <SelectField field="Right_DateKey_SK" selected="True" rename="EndDate" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="498" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,
+	purchasingdw.dimdate.FullDate_AlternateKey 
+from purchasingdw.dimdate</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select purchasingdw.dimdate....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="DateKey_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" />
+            <Field name="FullDate_AlternateKey" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA;	purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="642" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="DueDate" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="FullDate_AlternateKey" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_WorkOrderID" selected="True" input="Left_" />
+                <SelectField field="Left_OrderQty" selected="True" input="Left_" />
+                <SelectField field="Left_StockedQty" selected="True" input="Left_" />
+                <SelectField field="Left_ScrappedQty" selected="True" input="Left_" />
+                <SelectField field="Left_StartDate" selected="True" input="Left_" />
+                <SelectField field="Left_EndDate" selected="True" input="Left_" />
+                <SelectField field="Right_DateKey_SK" selected="True" rename="DueDate" input="Right_" />
+                <SelectField field="Left_DueDate" selected="False" input="Left_" />
+                <SelectField field="Left_ScrapReasonID" selected="True" rename="ScrapID_SK" input="Left_" />
+                <SelectField field="Left_ProductID_SK" selected="True" input="Left_" />
+                <SelectField field="Right_FullDate_AlternateKey" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="894" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ScrapID_SK" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ScrapID_SK" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_WorkOrderID" selected="True" input="Left_" />
+                <SelectField field="Left_OrderQty" selected="True" input="Left_" />
+                <SelectField field="Left_StockedQty" selected="True" input="Left_" />
+                <SelectField field="Left_ScrappedQty" selected="True" input="Left_" />
+                <SelectField field="Left_StartDate" selected="True" input="Left_" />
+                <SelectField field="Left_EndDate" selected="True" input="Left_" />
+                <SelectField field="Left_DueDate" selected="True" input="Left_" />
+                <SelectField field="Left_ProductID_SK" selected="True" input="Left_" />
+                <SelectField field="Right_ScrapID_SK" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="762" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimscrapreason.ScrapID_SK,
+	purchasingdw.dimscrapreason.ScrapReason 
+from purchasingdw.dimscrapreason</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=select purchasingdw.dimscrap...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="PrimaryKey" name="ScrapID_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimscrapreason.ScrapID_SK,&#xA;	purchasingdw.dimscrapreason.ScrapReason &#xA;from purchasingdw.dimscrapreason" type="Int32" />
+            <Field name="ScrapReason" size="50" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimscrapreason.ScrapID_SK,&#xA;	purchasingdw.dimscrapreason.ScrapReason &#xA;from purchasingdw.dimscrapreason" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="930" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="ScrapID_SK" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="ScrapID_SK" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_ScrapID_SK" selected="True" input="Left_" />
+                <SelectField field="Right_WorkOrderID" selected="True" input="Right_" />
+                <SelectField field="Right_OrderQty" selected="True" input="Right_" />
+                <SelectField field="Right_StockedQty" selected="True" input="Right_" />
+                <SelectField field="Right_ScrappedQty" selected="True" input="Right_" />
+                <SelectField field="Right_StartDate" selected="True" input="Right_" />
+                <SelectField field="Right_EndDate" selected="True" input="Right_" />
+                <SelectField field="Right_DueDate" selected="True" input="Right_" />
+                <SelectField field="Right_ProductID_SK" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1026" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <AutoResetMode>ByName</AutoResetMode>
+          <MultiMetaInfo>
+            <MetaInfo name="#1">
+              <RecordInfo>
+                <Field name="WorkOrderID" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" column="1" />
+                <Field name="OrderQty" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" column="2" />
+                <Field name="StockedQty" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" column="3" />
+                <Field name="ScrappedQty" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int16" column="4" />
+                <Field description="PrimaryKey" name="StartDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA; purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" column="5" />
+                <Field description="PrimaryKey" name="EndDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA; purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" column="6" />
+                <Field description="PrimaryKey" name="DueDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA; purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" column="7" />
+                <Field name="ProductID_SK" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" column="8" />
+                <Field description="PrimaryKey" name="ScrapID_SK" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimscrapreason.ScrapID_SK,&#xA; purchasingdw.dimscrapreason.ScrapReason &#xA;from purchasingdw.dimscrapreason" type="Int32" column="9" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo name="#2">
+              <RecordInfo>
+                <Field name="WorkOrderID" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" column="1" />
+                <Field name="OrderQty" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" column="2" />
+                <Field name="StockedQty" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" column="3" />
+                <Field name="ScrappedQty" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int16" column="4" />
+                <Field description="PrimaryKey" name="StartDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA; purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" column="5" />
+                <Field description="PrimaryKey" name="EndDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA; purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" column="6" />
+                <Field description="PrimaryKey" name="DueDate" source="File: odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||select purchasingdw.dimdate.DateKey_SK,&#xA; purchasingdw.dimdate.FullDate_AlternateKey &#xA;from purchasingdw.dimdate" type="Int64" column="7" />
+                <Field name="ProductID_SK" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int32" column="8" />
+                <Field name="ScrapID_SK" source="File: aka:SQLServer_AW|||select Production.WorkOrder.WorkOrderID,&#xA; Production.WorkOrder.ProductID,&#xA; Production.WorkOrder.OrderQty,&#xA; Production.WorkOrder.StockedQty,&#xA; Production.WorkOrder.ScrappedQty,&#xA; Production.WorkOrder.StartDate,&#xA; Production.WorkOrder.EndDate,&#xA; Production.WorkOrder.DueDate,&#xA; Production.WorkOrder.ScrapReasonID &#xA;from Production.WorkOrder" type="Int16" column="9" />
+              </RecordInfo>
+            </MetaInfo>
+          </MultiMetaInfo>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ManualDelayed</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="774" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>ScrapID_SK</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2020-02-25 19:12:09</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2020-02-25 19:12:09</StartDate>
+              <EndDate>2020-02-25 19:12:09</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([ScrapID_SK])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+        <Position x="294" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UniqueFields>
+            <Field field="WorkOrderID" />
+          </UniqueFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1146" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.WorkflowFileName]" field="JobID" size="64" type="WString" />
+            <FormulaField expression="DateTimeNow()" field="CreatedDate" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="ModifiedDate" size="19" type="DateTime" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>JobID = [Engine.WorkflowFileName]
+CreatedDate = DateTimeNow()
+ModifiedDate = Dat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1038" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.WorkflowFileName]" field="JobID" size="64" type="WString" />
+            <FormulaField expression="DateTimeNow()" field="CreatedDate" size="19" type="DateTime" />
+            <FormulaField expression="DateTimeNow()" field="ModifiedDate" size="19" type="DateTime" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>JobID = [Engine.WorkflowFileName]
+CreatedDate = DateTimeNow()
+ModifiedDate = Dat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1242" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="WorkOrderID" selected="True" />
+            <SelectField field="OrderQty" selected="True" />
+            <SelectField field="StockedQty" selected="True" />
+            <SelectField field="ScrappedQty" selected="True" rename="ScrapedQty" />
+            <SelectField field="StartDate" selected="True" />
+            <SelectField field="EndDate" selected="True" />
+            <SelectField field="DueDate" selected="True" />
+            <SelectField field="ProductID_SK" selected="True" />
+            <SelectField field="ScrapID_SK" selected="True" />
+            <SelectField field="JobID" selected="True" />
+            <SelectField field="CreatedDate" selected="True" />
+            <SelectField field="ModifiedDate" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1218" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ScrapID_SK" selected="True" />
+            <SelectField field="WorkOrderID" selected="True" />
+            <SelectField field="OrderQty" selected="True" />
+            <SelectField field="StockedQty" selected="True" />
+            <SelectField field="ScrappedQty" selected="True" rename="ScrapedQty" />
+            <SelectField field="StartDate" selected="True" />
+            <SelectField field="EndDate" selected="True" />
+            <SelectField field="DueDate" selected="True" />
+            <SelectField field="ProductID_SK" selected="True" />
+            <SelectField field="JobID" selected="True" />
+            <SelectField field="CreatedDate" selected="True" />
+            <SelectField field="ModifiedDate" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1326" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||purchasingdw.factworkorder</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=purchasingdw.factworkorder</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1338" y="462" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">odbc:DSN=MySQL;UID=info7370;PWD=__EncPwd1__|||purchasingdw.factworkorder_rejects</File>
+          <Passwords>47153B24A25FF4E3F4A5F33E03FA86248434FD962</Passwords>
+          <FormatSpecificOptions>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <TransactionSize>10000</TransactionSize>
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <PostSQL />
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+            <TransactionMessages>False</TransactionMessages>
+            <OutputOption>Delete</OutputOption>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MySQL
+Query=purchasingdw.factworkorder_r...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Unique" />
+      <Destination ToolID="5" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Join" />
+      <Destination ToolID="7" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Join" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="10" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="10" Connection="Join" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="10" Connection="Left" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="18" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="18" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Join" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>factworkorder</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
